@@ -1,0 +1,126 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#24273a;
+}
+
+#icon{
+    border-radius: 10px;
+}
+
+
+
+/* ALL MENU BAR */
+  /* Style the menu bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  /* Style the menu items */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav li {
+    padding: 0 20px;
+  }
+
+  /* Style the menu links */
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* Change link color on hover */
+  nav a:hover {
+    color: var(--secondary-color);
+  }
+
+  /* Change background color of menu on hover */
+  nav li:hover {
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+  }
+ /* Define the pastel color scheme */
+ :root {
+    --primary-color: #131020;
+    --secondary-color: #F5D0A9;
+    --tertiary-color: #c29df1;
+  }
+/* End of menu bar*/
+
+/* Fancy Logo */
+.logo-container {
+    position: absolute; /* position the container absolute */
+    top: 50%; /* move the container to the middle of the vertical axis */
+    left: 50%; /* move the container to the middle of the horizontal axis */
+    transform: translate(-50%, -50%); /* center the container */
+    
+  }
+  
+  .logo {
+    border-radius: 25px; /* create a round border */
+    border: 2px solid #131020; /* set the border width and color */
+    animation: Logo 1.2s ease-in-out;
+    padding: 10px; /* add padding to the logo */
+    background-color: #131020;
+    color: #f3bce6;
+    text-align: center;
+  }
+  @keyframes rainbowText {
+    0% {
+      color: #ff0000; /* red */
+    }
+    20% {
+      color: #ff7f00; /* orange */
+    }
+    40% {
+      color: #ffff00; /* yellow */
+    }
+    60% {
+      color: #00ff00; /* green */
+    }
+    80% {
+      color: #0000ff; /* blue */
+    }
+    100% {
+      color: #4b0082; /* indigo */
+    }
+  }
+  
+  .logo:hover{
+    animation: rainbowText 1s ease-in-out infinite;
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes Logo {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
