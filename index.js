@@ -39,3 +39,27 @@ $('#sileo').on('click', function(event) {
     alert('Not available on your device');
   }
 });
+
+$(document).ready(function() {
+  $('#copyLink').click(function() {
+    var textToCopy = 'evr4';
+    
+    var tempInput = $('<input>');
+    $('body').append(tempInput);
+    
+    tempInput.val(textToCopy).select();
+    
+    document.execCommand('copy');
+    
+    tempInput.remove();
+    
+    var message = $('#message');
+    message.text('Copied discord username: ' + textToCopy);
+    
+    setTimeout(function() {
+      message.text('');
+    }, 3000);
+    
+    return false;
+  });
+});
