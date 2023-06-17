@@ -1,4 +1,21 @@
-
+document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth > 768) { // Set the breakpoint at which the effect should be disabled
+            VANTA.DOTS({
+                el: "#background",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 0.1,
+                scaleMobile: 1.00,
+                color: 0x020617,
+                color2: 0x020617,
+                backgroundColor: 0xf4f4f5,
+                showLines: false
+            });
+        }
+    });
 $(document).ready(function() {
   var hidden, visibilityState, visibilityChange;
 
@@ -29,14 +46,28 @@ $(document).ready(function() {
   if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     $('#sileo').html('Add to sileo');
   } else {
-    $('#sileo').html('Not available on your device');
+    $('#support').text('Add to sileo');
   }
 });
 
 $('#sileo').on('click', function(event) {
   if (!/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     event.preventDefault();
-    alert('Not available on your device');
+    $("#sileo").addClass("bg-red-600 text-zinc-50");
+    $('#sileo').removeClass("sm:hover:bg-zinc-100 sm:hover:scale-100 hover:border sm:hover:text-slate-950 sm:hover:border-slate-950 sm:hover:border-2")
+    $("#sileo").addClass("sm:hover:border sm:hover:text-red-600 sm:hover:bg-zinc-100 sm:hover:border-red-600 sm:hover:border-2");
+    $('#force').removeClass("hidden");
+    $("#force").addClass("flex");
+    $('#support').text('Not supported on your device');
+    setTimeout(function() {
+      $('#support').text('');
+    $('#support').text('Add to sileo');
+    $("#sileo").removeClass("bg-red-600 text-zinc-50");
+    $("#sileo").removeClass("sm:hover:border sm:hover:text-red-600 sm:hover:bg-zinc-100 sm:hover:border-red-600 sm:hover:border-2");
+    $("#sileo").addClass("sm:hover:bg-zinc-100 sm:hover:scale-100 hover:border sm:hover:text-slate-950 sm:hover:border-slate-950 sm:hover:border-2")
+    $("#force").removeClass("flex");
+    $("#force").addClass('hidden');
+    }, 3000);
   }
 });
 
