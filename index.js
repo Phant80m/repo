@@ -1,22 +1,3 @@
-document.addEventListener("DOMContentLoaded",
-function() {
-  if (window.innerWidth > 768) { // Set the breakpoint at which the effect should be disabled
-    VANTA.DOTS({
-      el: "#background",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: true,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.0,
-      scaleMobile: 1.00,
-      color: 0x020617,
-      color2: 0x020617,
-      backgroundColor: 0xf4f4f5,
-      showLines: false
-    });
-  }
-});
 
 $(document).ready(function() {
   var hidden, visibilityState, visibilityChange;
