@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,103 +16,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  clifford: "#da373d",
-                },
-              },
-            },
-          };
+      module.exports = {
+        // ...
+        theme: {
+          extend: {
+            animation: {},
+          },
+        },
+      },
+      }
     </script>
-    <style>
-    </style>
-    <script>
-</script>
-
-
+    <link rel="stylesheet" href="style/index.css">
     <title>personal</title>
-</head>
-
-<body class="bg-zinc-50 " id="background">
+  </head>
+  <body class="bg-zinc-50 " id="background">
     <div class="sm:hidden bg-zinc-100 border-b text-slate-950 border-slate-950 border-b-2 text-slate-950 py-2 text-lg font-mono">
-        <ul class="flex items-center justify-center w-screen logo">
-            <li class="px-5 ease-in-out transition-all duration-1000 hover:rotate-180">
-                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0" />
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="sharp" />
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M12 8V16M12 8V2M12 8L7 3M12 8L17 3M12 16V22M12 16L7 21M12 16L17 21M16 12H8M16 12H22M16 12L21 7M16 12L21 17M8 12H2M8 12L3 7M8 12L3 17"
-                  stroke="#020617"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-            </svg>
-            </li>
-            <li class="p-3 bold">
-                <a href="sileo://source/https://repo.indium.live" class="no-underline bold">Add to sileo</a>
-            </li>
-        </ul>
+      <ul class="flex items-center justify-center w-screen logo">
+        <li class="px-5 ease-in-out transition-all duration-1000 hover:rotate-180">
+          <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="sharp" />
+            <g id="SVGRepo_iconCarrier">
+              <path d="M12 8V16M12 8V2M12 8L7 3M12 8L17 3M12 16V22M12 16L7 21M12 16L17 21M16 12H8M16 12H22M16 12L21 7M16 12L21 17M8 12H2M8 12L3 7M8 12L3 17" stroke="#020617" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </li>
+        <li class="p-3 bold">
+          <a href="sileo://source/https://repo.indium.live" class="no-underline bold">Add to sileo</a>
+        </li>
+      </ul>
     </div>
-
     <div class="hidden sm:block navbar bg-zinc-100 text-slate-950 py-4 px-10 sm:px-0 text-lg font-mono border-b-2 border-slate-950 drop-shadow-xl">
-        <nav class="container mx-auto flex items-center justify-between">
-            <ul class="logo flex items-center list-none">
-                <li class="ml-auto px-5 ease-in-out transition-all duration-1000 hover:rotate-180">
-                    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <nav class="container mx-auto flex items-center justify-between">
+        <ul class="logo flex items-center list-none">
+          <li class="ml-auto px-5 ease-in-out transition-all duration-1000 hover:rotate-180">
+            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0" />
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="sharp" />
               <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M12 8V16M12 8V2M12 8L7 3M12 8L17 3M12 16V22M12 16L7 21M12 16L17 21M16 12H8M16 12H22M16 12L21 7M16 12L21 17M8 12H2M8 12L3 7M8 12L3 17"
-                  stroke="#020617"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                <path d="M12 8V16M12 8V2M12 8L7 3M12 8L17 3M12 16V22M12 16L7 21M12 16L17 21M16 12H8M16 12H22M16 12L21 7M16 12L21 17M8 12H2M8 12L3 7M8 12L3 17" stroke="#020617" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </g>
             </svg>
-                </li>
-                <li class="sm:visible invisible">
-                    Nick Samuels
-                </li>
-            </ul>
-            <ul class="nav-content list-none flex space-x-7">
-                <li class="ml-auto"><a href="" id="copyLink" class="">contact</a></li>
-                <li class="ml-auto">
-                    <div id="message"></div>
-                </li>
-                <li>
-                    <a href="https://github.com/phant80m/" target="_blank" class="border-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 hover:bg-zinc-100 hover:scale-100 hover:border hover:text-slate-950 hover:border-slate-950 hover:border-2">
-                        <i class="fa-brands fa-github"></i> github</a>
-                </li>
-            </ul>
-        </nav>
+          </li>
+          <li class="sm:visible invisible"> repo.indium.live </li>
+        </ul>
+        <ul class="nav-content list-none flex space-x-7">
+          <li class="hidden ml-auto px-6">
+            <a href="/">home</a>
+          </li>
+          <li class="ml-auto">
+            <a href="" id="copyLink" class="">
+              <i class="fa-solid fa-address-book"></i> contact </a>
+          </li>
+          <li class="ml-auto">
+            <div id="message"></div>
+          </li>
+          <li>
+            <a href="https://github.com/phant80m/" target="_blank" class="border-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 hover:bg-zinc-100 hover:scale-100 hover:border hover:text-slate-950 hover:border-slate-950 hover:border-2">
+              <i class="fa-brands fa-github"></i> github </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
     <div class="sm:text-left text-center main flex justify-center items-center h-[25rem] sm:h-screen m-[20px] sm:m-0">
-        <div class="bio py-4 bg-zinc-50 rounded-[15px] p-[10px]">
-            <h1 class="font-bold text-xl sm:text-2xl font-mono">
-                $ Phan80m's procursus repo
-            </h1>
-            <p class="flex justify-center items-center py-4 font-sans text-lg bold">
-                This repo contains tweaks that have deleted, as well as some quality of life tweaks too.
-                <br> Click bellow to add the repository to Sileo if it is available
-            </p>
-            <a id="sileo" href="sileo://source/https://repo.indium.live" class="py-4 no-underline flex justify-center items-centerborder-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 sm:hover:bg-zinc-100 sm:hover:scale-100 hover:border sm:hover:text-slate-950 sm:hover:border-slate-950 sm:hover:border-2 drop-shadow-xl">
-                <div id="support"></div>
-            </a>
-            <a id="force" href="sileo://source/https://repo.indium.live" class=" text-lg hidden my-4 m-[10%] no-underline justify-center items-center p-3
+      <div class="bio py-4 rounded-[15px] p-[10px]">
+        <h1 id="description" class="font-bold text-xl sm:text-2xl font-mono"> $ Phan80m's procursus repo </h1>
+        <p class="flex justify-center items-center py-4 font-sans text-lg bold"> This repo contains tweaks that have deleted, as well as some quality of life tweaks too. <br> Click bellow to add the repository to Sileo if it is available </p>
+        <a id="sileo" href="sileo://source/https://repo.indium.live" class="py-4 no-underline flex justify-center items-centerborder-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 sm:hover:bg-zinc-100 sm:hover:scale-100 hover:border sm:hover:text-slate-950 sm:hover:border-slate-950 sm:hover:border-2 drop-shadow-xl">
+          <div id="support"></div>
+        </a>
+        <a id="force" href="sileo://source/https://repo.indium.live" class=" text-lg hidden my-4 m-[10%] no-underline justify-center items-center p-3
              rounded-[50px] drop-shadow-xl">
-                <div id="fsupport">Force add repo?</div>
-            </a>
-        </div>
+          <div id="fsupport">Force add repo?</div>
+        </a>
+      </div>
+    </div>
+    <div class="fixed bottom-4 left-4">
+      <button id="mobileButton" class="hidden bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-[15px] shadow"> test </button>
     </div>
     <script src="/index.js"></script>
-</body>
-
+  </body>
 </html>

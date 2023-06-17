@@ -1,8 +1,8 @@
-Origin: Riot's Repo
-Label: Riot's Tweaks
+Origin: Phant80m's Repo
+Label: Phant80m's Tweaks
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: A repo full of R10T's favorite tweaks!
+Description: An archive of tweaks!

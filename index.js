@@ -1,3 +1,18 @@
+window.addEventListener('load', function() {
+  var description = document.getElementById('description');
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (!isMobile) {
+    description.classList.add('typewriter');
+  }
+});
+$(document).ready(function() {
+    $('#mobileButton').click(function() {
+      // Request mobile version of the site
+      // Replace `mobile-site-url` with the actual URL of your mobile site
+      window.location.href = 'mobile-site-url';
+    });
+  });
 
 $(document).ready(function() {
   var hidden, visibilityState, visibilityChange;
