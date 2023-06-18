@@ -1,3 +1,16 @@
+var isVisible = false;
+
+    $(document).keydown(function(event) {
+      if (event.ctrlKey && event.code === "Space") {
+        if (isVisible) {
+          $("#myDiv").addClass("hidden");
+        } else {
+          $("#myDiv").removeClass("hidden");
+        }
+        isVisible = !isVisible;
+      }
+});
+
 window.addEventListener('load', function() {
   var description = document.getElementById('description');
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

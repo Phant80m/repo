@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,84 +17,137 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      module.exports = {
-        // ...
-        theme: {
-          extend: {
-            animation: {},
+        module.exports = {
+            // ...
+            theme: {
+              extend: {
+                animation: {},
+              },
+            },
           },
-        },
-      },
-      }
+          }
     </script>
     <link rel="stylesheet" href="style/index.css">
     <title>personal</title>
-  </head>
-  <body class="bg-zinc-50 " id="background">
+</head>
+
+<body class="bg-zinc-50 " id="background">
     <div class="sm:hidden bg-zinc-100 border-b text-slate-950 border-slate-950 border-b-2 text-slate-950 py-2 text-lg font-mono">
-      <ul class="flex items-center justify-center w-screen logo">
-        <li class="px-5 ease-in-out transition-all duration-1000 hover:rotate-180">
-          <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ul class="flex items-center justify-center w-screen logo">
+            <li class="px-5 ease-in-out transition-all duration-1000 hover:rotate-180">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0" />
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="sharp" />
             <g id="SVGRepo_iconCarrier">
               <path d="M12 8V16M12 8V2M12 8L7 3M12 8L17 3M12 16V22M12 16L7 21M12 16L17 21M16 12H8M16 12H22M16 12L21 7M16 12L21 17M8 12H2M8 12L3 7M8 12L3 17" stroke="#020617" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </g>
           </svg>
-        </li>
-        <li class="p-3 bold">
-          <a href="sileo://source/https://repo.indium.live" class="no-underline bold">Add to sileo</a>
-        </li>
-      </ul>
+            </li>
+            <li class="p-3 bold">
+                <a href="sileo://source/https://repo.indium.live" class="no-underline bold">Add to sileo</a>
+            </li>
+        </ul>
     </div>
     <div class="hidden sm:block navbar bg-zinc-100 text-slate-950 py-4 px-10 sm:px-0 text-lg font-mono border-b-2 border-slate-950 drop-shadow-xl">
-      <nav class="container mx-auto flex items-center justify-between">
-        <ul class="logo flex items-center list-none">
-          <li class="ml-auto px-5 ease-in-out transition-all duration-1000 hover:rotate-180">
-            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <nav class="container mx-auto flex items-center justify-between">
+            <ul class="logo flex items-center list-none">
+                <li class="ml-auto px-5 ease-in-out transition-all duration-1000 hover:rotate-180">
+                    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0" />
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="sharp" />
               <g id="SVGRepo_iconCarrier">
                 <path d="M12 8V16M12 8V2M12 8L7 3M12 8L17 3M12 16V22M12 16L7 21M12 16L17 21M16 12H8M16 12H22M16 12L21 7M16 12L21 17M8 12H2M8 12L3 7M8 12L3 17" stroke="#020617" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </g>
             </svg>
-          </li>
-          <li class="sm:visible invisible"> repo.indium.live </li>
-        </ul>
-        <ul class="nav-content list-none flex space-x-7">
-          <li class="hidden ml-auto px-6">
-            <a href="/">home</a>
-          </li>
-          <li class="ml-auto">
-            <a href="" id="copyLink" class="">
-              <i class="fa-solid fa-address-book"></i> contact </a>
-          </li>
-          <li class="ml-auto">
-            <div id="message"></div>
-          </li>
-          <li>
-            <a href="https://github.com/phant80m/" target="_blank" class="border-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 hover:bg-zinc-100 hover:scale-100 hover:border hover:text-slate-950 hover:border-slate-950 hover:border-2">
-              <i class="fa-brands fa-github"></i> github </a>
-          </li>
-        </ul>
-      </nav>
+                </li>
+                <li class="sm:visible invisible"> repo.indium.live </li>
+            </ul>
+            <ul class="nav-content list-none flex space-x-7">
+                <li class="hidden ml-auto px-6">
+                    <a href="/">home</a>
+                </li>
+                <li class="ml-auto">
+                    <a href="" id="copyLink" class="">
+                        <i class="fa-solid fa-address-book"></i> contact </a>
+                </li>
+                <li class="ml-auto">
+                    <div id="message"></div>
+                </li>
+                <li>
+                    <a href="https://github.com/phant80m/" target="_blank" class="border-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 hover:bg-zinc-100 hover:scale-100 hover:border hover:text-slate-950 hover:border-slate-950 hover:border-2">
+                        <i class="fa-brands fa-github"></i> github </a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <div class="sm:text-left text-center main flex justify-center items-center h-[25rem] sm:h-screen m-[20px] sm:m-0">
-      <div class="bio py-4 rounded-[15px] p-[10px]">
-        <h1 id="description" class="font-bold text-xl sm:text-2xl font-mono"> $ Phan80m's procursus repo </h1>
-        <p class="flex justify-center items-center py-4 font-sans text-lg bold"> This repo contains tweaks that have deleted, as well as some quality of life tweaks too. <br> Click below to add the repository to Sileo if it is available </p>
-        <a id="sileo" href="sileo://source/https://repo.indium.live" class="py-4 no-underline flex justify-center items-centerborder-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 sm:hover:bg-zinc-100 sm:hover:scale-100 hover:border sm:hover:text-slate-950 sm:hover:border-slate-950 sm:hover:border-2 drop-shadow-xl">
-          <div id="support"></div>
-        </a>
-        <a id="force" href="sileo://source/https://repo.indium.live" class=" text-lg hidden my-4 m-[10%] no-underline justify-center items-center p-3
+        <div class="bio py-4 rounded-[15px] p-[10px]">
+            <h1 id="description" class="font-bold text-xl sm:text-2xl font-mono"> $ Phan80m's procursus repo </h1>
+            <p class="flex justify-center items-center py-4 font-sans text-lg bold"> This repo contains tweaks that have deleted, as well as some quality of life tweaks too. <br> Click below to add the repository to Sileo if it is available </p>
+            <a id="sileo" href="sileo://source/https://repo.indium.live" class="py-4 no-underline flex justify-center items-centerborder-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 sm:hover:bg-zinc-100 sm:hover:scale-100 hover:border sm:hover:text-slate-950 sm:hover:border-slate-950 sm:hover:border-2 drop-shadow-xl">
+                <div id="support"></div>
+            </a>
+            <a id="force" href="sileo://source/https://repo.indium.live" class=" text-lg hidden my-4 m-[10%] no-underline justify-center items-center p-3
              rounded-[50px] drop-shadow-xl">
-          <div id="fsupport">Force add repo?</div>
-        </a>
-      </div>
+                <div id="fsupport">Force add repo?</div>
+            </a>
+        </div>
     </div>
     <div class="fixed bottom-4 left-4">
-      <button id="mobileButton" class="hidden bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-[15px] shadow"> test </button>
+        <button id="mobileButton" class="hidden bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-[15px] shadow"> test </button>
+    </div>
+    <div id="myDiv" class="fixed inset-0 flex items-center justify-center bg-zinc-50 p-4 hidden w-screen h-screen">
+        <div id="bg-wrap" class="w-screen h-screen">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+          <defs>
+          <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+          <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+          <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+          <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
+          <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+          <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
+          </defs>
+          <!--<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
+          <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+          <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+          <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
+          <animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
+          <animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
+          <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
+          <animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
+          <animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
+          <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
+          </rect>-->
+          <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+          <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+          </rect>
+          <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+          </rect>
+          </svg>
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                <div class="backdrop-blur-md rounded-[15px]">
+
+                    <div class="sm:text-left text-center main flex justify-center items-center rounded-[15px] sm:h-full m-[20px] sm:m-0">
+                        <div class="bio py-4 rounded-[15px] p-[10px]">
+                            <h1 id="description" class="font-bold text-xl sm:text-2xl font-mono typewriter"> $ Congratulations you have reached the hidden page </h1>
+                            <p class="flex justify-center items-center py-4 font-sans text-lg bold text-left">
+                                idk about this place im going back home...
+                            </p>
+                            <a id="" href="/" class="py-4 no-underline flex justify-center items-centerborder-2 text-zinc-100 bg-slate-950 p-3 rounded-[15px] transition-color duration-500 sm:hover:bg-zinc-100 sm:hover:scale-100 hover:border sm:hover:text-slate-950 sm:hover:border-slate-950 sm:hover:border-2 drop-shadow-xl">
+                                return home
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script src="/index.js"></script>
-  </body>
+</body>
+
 </html>
